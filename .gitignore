@@ -1,0 +1,23 @@
+# Build outputs
+x64/
+HeliosRender/
+Debug/
+Release/
+*.lib
+*.obj
+*.pdb
+*.ilk
+*.idb
+*.tlog
+*.log
+
+# Visual Studio / IDE user files
+.vs/
+*.user
+*.opendb
+*.VC.db
+*.VC.opendb
+*.suo
+
+# Runtime outputs
+output.ppm

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="DXRenderer">
+      <UniqueIdentifier>{c617cb24-1b82-44e1-9552-8672fc4db7a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXResources">
+      <UniqueIdentifier>{017edf9d-af98-49d4-84f7-16b5db581112}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXResources\2DOutputTexture">
+      <UniqueIdentifier>{1bee8b11-ca94-4dcc-8c8e-c249dc9786b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXResources\AccelerationStructureData">
+      <UniqueIdentifier>{a8b1a554-b023-4177-bffc-2246de791a58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXResources\CameraBuffer">
+      <UniqueIdentifier>{a109fd9c-b587-4c03-9edb-6db13f1a0a70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXResources\DXResource">
+      <UniqueIdentifier>{5000eb50-cb1c-40bf-a43c-cb02aebef24a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXResources\GPUDefaultHeap">
+      <UniqueIdentifier>{55452f7e-e95c-4b03-9fa8-85b52eecbf40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXResources\GPUReadback">
+      <UniqueIdentifier>{756d640c-d952-4e58-b2b3-9a602a75c1c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXResources\LightResource">
+      <UniqueIdentifier>{eee976f9-369d-4aa0-9d38-51ba657c7cc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXResources\RTVResource">
+      <UniqueIdentifier>{6c56c309-a9de-451b-abb7-a9a382688e80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXResources\SBTDefaultHeap">
+      <UniqueIdentifier>{9d1be7fa-360c-4d2c-8b73-a1d5d27c953f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXResources\SBTUploadHeap">
+      <UniqueIdentifier>{ed52c3a5-d6ff-4471-a5d2-b806edfb3466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXResources\VertexBuffer">
+      <UniqueIdentifier>{df2b8a02-5d6a-4f6d-89d8-7e65723c9261}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{e26dd00a-f39f-4f77-bb55-c85706de2386}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Objects">
+      <UniqueIdentifier>{b6ad6dae-c64b-4cc6-aa8f-3bdf7f2499de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\SceneLoader">
+      <UniqueIdentifier>{b19af5f0-43f3-4a9b-a399-0889da2fd3b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{7d814b21-1934-4a57-b3a4-9f257d3e1120}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera\Movement">
+      <UniqueIdentifier>{855c9c3d-3432-4423-b2d6-774ba128c1d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShaderCompiler">
+      <UniqueIdentifier>{b4fbfff9-7ba0-4456-a7e4-493bc9168684}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HLSL">
+      <UniqueIdentifier>{e1a21206-aba1-4973-a62f-50aeeb645702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HLSL\Rasterization">
+      <UniqueIdentifier>{5895d7c3-1519-41d4-acc4-3600e3267b7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HLSL\RayTracing">
+      <UniqueIdentifier>{341db61f-4e8f-4dec-852f-03704652e133}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{61300b9f-5efd-4b5a-b884-2eb238f2d691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\CustomStopwatch">
+      <UniqueIdentifier>{c831eb25-f70b-4bca-8db4-eb658c4cca60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Shape">
+      <UniqueIdentifier>{40070fe6-1cf1-4cf4-90eb-a1533c9693b1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DXRenderer.cpp">
+      <Filter>DXRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputTexture.cpp">
+      <Filter>DXResources\2DOutputTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="AccelerationStructureData.cpp">
+      <Filter>DXResources\AccelerationStructureData</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraBufferResource.cpp">
+      <Filter>DXResources\CameraBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="DXResource.cpp">
+      <Filter>DXResources\DXResource</Filter>
+    </ClCompile>
+    <ClCompile Include="GPUDefaultHeap.cpp">
+      <Filter>DXResources\GPUDefaultHeap</Filter>
+    </ClCompile>
+    <ClCompile Include="GPUReadbackHeapResource.cpp">
+      <Filter>DXResources\GPUReadback</Filter>
+    </ClCompile>
+    <ClCompile Include="LightResource.cpp">
+      <Filter>DXResources\LightResource</Filter>
+    </ClCompile>
+    <ClCompile Include="RTVResource.cpp">
+      <Filter>DXResources\RTVResource</Filter>
+    </ClCompile>
+    <ClCompile Include="SBTDefaultHeap.cpp">
+      <Filter>DXResources\SBTDefaultHeap</Filter>
+    </ClCompile>
+    <ClCompile Include="SBTUploadHeap.cpp">
+      <Filter>DXResources\SBTUploadHeap</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexBuffer.cpp">
+      <Filter>DXResources\VertexBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraSceneObject.cpp">
+      <Filter>Scene\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometrySceneObject.cpp">
+      <Filter>Scene\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="LightSceneObject.cpp">
+      <Filter>Scene\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneObject.cpp">
+      <Filter>Scene\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneLoader.cpp">
+      <Filter>Scene\SceneLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="Movement.cpp">
+      <Filter>Camera\Movement</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderCompiler.cpp">
+      <Filter>ShaderCompiler</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomStopwatch.cpp">
+      <Filter>Utils\CustomStopwatch</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape.cpp">
+      <Filter>Utils\Shape</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HeliosRender.h" />
+    <ClInclude Include="DXRenderer.h">
+      <Filter>DXRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputTexture.h">
+      <Filter>DXResources\2DOutputTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="AccelerationStructureData.h">
+      <Filter>DXResources\AccelerationStructureData</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraBufferResource.h">
+      <Filter>DXResources\CameraBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="DXResource.h">
+      <Filter>DXResources\DXResource</Filter>
+    </ClInclude>
+    <ClInclude Include="GPUDefaultHeap.h">
+      <Filter>DXResources\GPUDefaultHeap</Filter>
+    </ClInclude>
+    <ClInclude Include="GPUReadbackHeapResource.h">
+      <Filter>DXResources\GPUReadback</Filter>
+    </ClInclude>
+    <ClInclude Include="LightResource.h">
+      <Filter>DXResources\LightResource</Filter>
+    </ClInclude>
+    <ClInclude Include="RTVResource.h">
+      <Filter>DXResources\RTVResource</Filter>
+    </ClInclude>
+    <ClInclude Include="SBTDefaultHeap.h">
+      <Filter>DXResources\SBTDefaultHeap</Filter>
+    </ClInclude>
+    <ClInclude Include="SBTUploadHeap.h">
+      <Filter>DXResources\SBTUploadHeap</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexBuffer.h">
+      <Filter>DXResources\VertexBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraSceneObject.h">
+      <Filter>Scene\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometrySceneObject.h">
+      <Filter>Scene\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="LightSceneObject.h">
+      <Filter>Scene\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneObject.h">
+      <Filter>Scene\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneLoader.h">
+      <Filter>Scene\SceneLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="Movement.h">
+      <Filter>Camera\Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="MovementInput.h">
+      <Filter>Camera\Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderCompiler.h">
+      <Filter>ShaderCompiler</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraBuffer.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="FPSPresets.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameData.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomStopwatch.h">
+      <Filter>Utils\CustomStopwatch</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape.h">
+      <Filter>Utils\Shape</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="ConstColor.hlsl">
+      <Filter>HLSL\Rasterization</Filter>
+    </FxCompile>
+    <FxCompile Include="ConstColorVS.hlsl">
+      <Filter>HLSL\Rasterization</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="dlls\dxcompiler.dll" />
+    <CopyFileToFolders Include="dlls\dxil.dll" />
+    <CopyFileToFolders Include="ray_tracing_shader.hlsl">
+      <Filter>HLSL\RayTracing</Filter>
+    </CopyFileToFolders>
+  </ItemGroup>
+</Project>
