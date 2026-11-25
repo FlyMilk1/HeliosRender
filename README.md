@@ -2,13 +2,33 @@
 
 Standalone DirectX 12 rendering engine library featuring both DXR ray tracing (BLAS/TLAS acceleration structures, shadow rays, point lighting) and D3D12 rasterization, decoupled from Qt and application shells.
 
+## Project Structure
+
+```text
+HeliosRender/
+├── src/
+│   ├── HeliosRender.h      # Umbrella header
+│   ├── camera/             # Camera constant buffer and movement controller
+│   ├── renderer/           # DXRenderer and runtime DXC shader compiler
+│   ├── resources/          # DirectX 12 buffers, heaps, textures, SBT, and AS wrappers
+│   ├── scene/              # Scene graph, .crtscene loader, and scene objects
+│   └── utils/              # Stopwatch, shape helpers, and shared POD structs
+├── shaders/
+│   ├── rasterization/      # Compiled rasterization HLSL shaders
+│   └── raytracing/         # Runtime-compiled DXR shader library
+└── third_party/
+    ├── directx/            # DirectX 12 Agility / D3DX12 headers
+    ├── DXCompiler/         # DirectX Shader Compiler headers, libs, and DLLs
+    └── rapidjson/          # RapidJSON for .crtscene parsing
+```
+
 ## Project Type
 
 - Visual Studio C++20 Static Library (`HeliosRender.lib`)
-- Dependencies bundled in `include/` and `dlls/`:
-  - DirectX 12 Agility / D3DX12 headers (`include/directx`)
-  - DirectX Shader Compiler (`include/DXCompiler`, `dlls/dxcompiler.dll`, `dlls/dxil.dll`)
-  - RapidJSON (`include/rapidjson`) for `.crtscene` parsing
+- Dependencies bundled in `third_party/`:
+  - DirectX 12 Agility / D3DX12 headers (`third_party/directx`)
+  - DirectX Shader Compiler (`third_party/DXCompiler`)
+  - RapidJSON (`third_party/rapidjson`) for `.crtscene` parsing
 
 ## Building
 
@@ -23,7 +43,7 @@ Outputs are written to `x64/Debug/` or `x64/Release/`, including `HeliosRender.l
 
 ## Integrating into an Application
 
-1. Add `D:\repos\HeliosRender`, `D:\repos\HeliosRender\include\directx`, `D:\repos\HeliosRender\include\DXCompiler\inc`, and `D:\repos\HeliosRender\include\rapidjson` to your consumer project's **Additional Include Directories** (or reference `HeliosRender.vcxproj` directly).
+1. Add `D:\repos\HeliosRender\src`, `D:\repos\HeliosRender\third_party\directx`, `D:\repos\HeliosRender\third_party\DXCompiler\inc`, and `D:\repos\HeliosRender\third_party\rapidjson` to your consumer project's **Additional Include Directories** (or reference `HeliosRender.vcxproj` directly).
 2. Link `HeliosRender.lib`, `d3d12.lib`, `dxgi.lib`, and `dxcompiler.lib`.
 3. Ensure `dxcompiler.dll`, `dxil.dll`, and `ray_tracing_shader.hlsl` are present in the application's working/output directory (or call `DXRenderer::setRayTracingShaderPath(...)`).
 4. Initialize and render using a native Win32 `HWND`:

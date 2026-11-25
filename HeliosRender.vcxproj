@@ -78,12 +78,12 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;NOMINMAX;DXC_SUPPORT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)include\directx;$(IntDir);$(ProjectDir)include\DXCompiler\inc;$(ProjectDir)include\DXCompiler\include;$(ProjectDir)include\rapidjson;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)src;$(ProjectDir)third_party\directx;$(IntDir);$(ProjectDir)third_party\DXCompiler\inc;$(ProjectDir)third_party\DXCompiler\include;$(ProjectDir)third_party\rapidjson;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Lib>
       <AdditionalDependencies>dxcompiler.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)include\DXCompiler\lib\x86;$(ProjectDir)include\DXCompiler\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)third_party\DXCompiler\lib\x86;$(ProjectDir)third_party\DXCompiler\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
     <FxCompile>
       <ShaderModel>6.3</ShaderModel>
@@ -98,12 +98,12 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;NOMINMAX;DXC_SUPPORT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)include\directx;$(IntDir);$(ProjectDir)include\DXCompiler\inc;$(ProjectDir)include\DXCompiler\include;$(ProjectDir)include\rapidjson;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)src;$(ProjectDir)third_party\directx;$(IntDir);$(ProjectDir)third_party\DXCompiler\inc;$(ProjectDir)third_party\DXCompiler\include;$(ProjectDir)third_party\rapidjson;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Lib>
       <AdditionalDependencies>dxcompiler.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)include\DXCompiler\lib\x86;$(ProjectDir)include\DXCompiler\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)third_party\DXCompiler\lib\x86;$(ProjectDir)third_party\DXCompiler\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
     <FxCompile>
       <ShaderModel>6.3</ShaderModel>
@@ -116,12 +116,12 @@
       <PreprocessorDefinitions>_DEBUG;_LIB;NOMINMAX;DXC_SUPPORT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)include\directx;$(IntDir);$(ProjectDir)include\DXCompiler\inc;$(ProjectDir)include\DXCompiler\include;$(ProjectDir)include\rapidjson;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)src;$(ProjectDir)third_party\directx;$(IntDir);$(ProjectDir)third_party\DXCompiler\inc;$(ProjectDir)third_party\DXCompiler\include;$(ProjectDir)third_party\rapidjson;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Lib>
       <AdditionalDependencies>dxcompiler.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)include\DXCompiler\lib\x64;$(ProjectDir)include\DXCompiler\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)third_party\DXCompiler\lib\x64;$(ProjectDir)third_party\DXCompiler\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
     <FxCompile>
       <ShaderModel>6.3</ShaderModel>
@@ -136,74 +136,74 @@
       <PreprocessorDefinitions>NDEBUG;_LIB;NOMINMAX;DXC_SUPPORT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)include\directx;$(IntDir);$(ProjectDir)include\DXCompiler\inc;$(ProjectDir)include\DXCompiler\include;$(ProjectDir)include\rapidjson;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)src;$(ProjectDir)third_party\directx;$(IntDir);$(ProjectDir)third_party\DXCompiler\inc;$(ProjectDir)third_party\DXCompiler\include;$(ProjectDir)third_party\rapidjson;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Lib>
       <AdditionalDependencies>dxcompiler.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)include\DXCompiler\lib\x64;$(ProjectDir)include\DXCompiler\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)third_party\DXCompiler\lib\x64;$(ProjectDir)third_party\DXCompiler\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
     <FxCompile>
       <ShaderModel>6.3</ShaderModel>
     </FxCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AccelerationStructureData.cpp" />
-    <ClCompile Include="CameraBufferResource.cpp" />
-    <ClCompile Include="CameraSceneObject.cpp" />
-    <ClCompile Include="CustomStopwatch.cpp" />
-    <ClCompile Include="DXRenderer.cpp" />
-    <ClCompile Include="DXResource.cpp" />
-    <ClCompile Include="GeometrySceneObject.cpp" />
-    <ClCompile Include="GPUDefaultHeap.cpp" />
-    <ClCompile Include="GPUReadbackHeapResource.cpp" />
-    <ClCompile Include="LightResource.cpp" />
-    <ClCompile Include="LightSceneObject.cpp" />
-    <ClCompile Include="Movement.cpp" />
-    <ClCompile Include="OutputTexture.cpp" />
-    <ClCompile Include="RTVResource.cpp" />
-    <ClCompile Include="SBTDefaultHeap.cpp" />
-    <ClCompile Include="SBTUploadHeap.cpp" />
-    <ClCompile Include="Scene.cpp" />
-    <ClCompile Include="SceneLoader.cpp" />
-    <ClCompile Include="SceneObject.cpp" />
-    <ClCompile Include="ShaderCompiler.cpp" />
-    <ClCompile Include="Shape.cpp" />
-    <ClCompile Include="VertexBuffer.cpp" />
+    <ClCompile Include="src\camera\Movement.cpp" />
+    <ClCompile Include="src\renderer\DXRenderer.cpp" />
+    <ClCompile Include="src\renderer\ShaderCompiler.cpp" />
+    <ClCompile Include="src\resources\AccelerationStructureData.cpp" />
+    <ClCompile Include="src\resources\CameraBufferResource.cpp" />
+    <ClCompile Include="src\resources\DXResource.cpp" />
+    <ClCompile Include="src\resources\GPUDefaultHeap.cpp" />
+    <ClCompile Include="src\resources\GPUReadbackHeapResource.cpp" />
+    <ClCompile Include="src\resources\LightResource.cpp" />
+    <ClCompile Include="src\resources\OutputTexture.cpp" />
+    <ClCompile Include="src\resources\RTVResource.cpp" />
+    <ClCompile Include="src\resources\SBTDefaultHeap.cpp" />
+    <ClCompile Include="src\resources\SBTUploadHeap.cpp" />
+    <ClCompile Include="src\resources\VertexBuffer.cpp" />
+    <ClCompile Include="src\scene\Scene.cpp" />
+    <ClCompile Include="src\scene\SceneLoader.cpp" />
+    <ClCompile Include="src\scene\objects\CameraSceneObject.cpp" />
+    <ClCompile Include="src\scene\objects\GeometrySceneObject.cpp" />
+    <ClCompile Include="src\scene\objects\LightSceneObject.cpp" />
+    <ClCompile Include="src\scene\objects\SceneObject.cpp" />
+    <ClCompile Include="src\utils\CustomStopwatch.cpp" />
+    <ClCompile Include="src\utils\Shape.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AccelerationStructureData.h" />
-    <ClInclude Include="CameraBuffer.h" />
-    <ClInclude Include="CameraBufferResource.h" />
-    <ClInclude Include="CameraSceneObject.h" />
-    <ClInclude Include="CustomStopwatch.h" />
-    <ClInclude Include="DXRenderer.h" />
-    <ClInclude Include="DXResource.h" />
-    <ClInclude Include="FPSPresets.h" />
-    <ClInclude Include="FrameData.h" />
-    <ClInclude Include="GeometrySceneObject.h" />
-    <ClInclude Include="GPUDefaultHeap.h" />
-    <ClInclude Include="GPUReadbackHeapResource.h" />
-    <ClInclude Include="HeliosRender.h" />
-    <ClInclude Include="Light.h" />
-    <ClInclude Include="LightResource.h" />
-    <ClInclude Include="LightSceneObject.h" />
-    <ClInclude Include="Movement.h" />
-    <ClInclude Include="MovementInput.h" />
-    <ClInclude Include="OutputTexture.h" />
-    <ClInclude Include="RTVResource.h" />
-    <ClInclude Include="SBTDefaultHeap.h" />
-    <ClInclude Include="SBTUploadHeap.h" />
-    <ClInclude Include="Scene.h" />
-    <ClInclude Include="SceneLoader.h" />
-    <ClInclude Include="SceneObject.h" />
-    <ClInclude Include="ShaderCompiler.h" />
-    <ClInclude Include="Shape.h" />
-    <ClInclude Include="Vertex.h" />
-    <ClInclude Include="VertexBuffer.h" />
+    <ClInclude Include="src\HeliosRender.h" />
+    <ClInclude Include="src\camera\CameraBuffer.h" />
+    <ClInclude Include="src\camera\Movement.h" />
+    <ClInclude Include="src\camera\MovementInput.h" />
+    <ClInclude Include="src\renderer\DXRenderer.h" />
+    <ClInclude Include="src\renderer\ShaderCompiler.h" />
+    <ClInclude Include="src\resources\AccelerationStructureData.h" />
+    <ClInclude Include="src\resources\CameraBufferResource.h" />
+    <ClInclude Include="src\resources\DXResource.h" />
+    <ClInclude Include="src\resources\GPUDefaultHeap.h" />
+    <ClInclude Include="src\resources\GPUReadbackHeapResource.h" />
+    <ClInclude Include="src\resources\LightResource.h" />
+    <ClInclude Include="src\resources\OutputTexture.h" />
+    <ClInclude Include="src\resources\RTVResource.h" />
+    <ClInclude Include="src\resources\SBTDefaultHeap.h" />
+    <ClInclude Include="src\resources\SBTUploadHeap.h" />
+    <ClInclude Include="src\resources\VertexBuffer.h" />
+    <ClInclude Include="src\scene\Scene.h" />
+    <ClInclude Include="src\scene\SceneLoader.h" />
+    <ClInclude Include="src\scene\objects\CameraSceneObject.h" />
+    <ClInclude Include="src\scene\objects\GeometrySceneObject.h" />
+    <ClInclude Include="src\scene\objects\LightSceneObject.h" />
+    <ClInclude Include="src\scene\objects\SceneObject.h" />
+    <ClInclude Include="src\utils\CustomStopwatch.h" />
+    <ClInclude Include="src\utils\FPSPresets.h" />
+    <ClInclude Include="src\utils\FrameData.h" />
+    <ClInclude Include="src\utils\Light.h" />
+    <ClInclude Include="src\utils\Shape.h" />
+    <ClInclude Include="src\utils\Vertex.h" />
   </ItemGroup>
   <ItemGroup>
-    <FxCompile Include="ConstColor.hlsl">
+    <FxCompile Include="shaders\rasterization\ConstColor.hlsl">
       <EntryPointName>PSMain</EntryPointName>
       <ShaderType>Pixel</ShaderType>
       <TreatWarningAsError>true</TreatWarningAsError>
@@ -213,7 +213,7 @@
       <AdditionalOptions>-enable-16bit-types %(AdditionalOptions)</AdditionalOptions>
       <EnableUnboundedDescriptorTables>true</EnableUnboundedDescriptorTables>
     </FxCompile>
-    <FxCompile Include="ConstColorVS.hlsl">
+    <FxCompile Include="shaders\rasterization\ConstColorVS.hlsl">
       <EntryPointName>VSMain</EntryPointName>
       <ShaderType>Vertex</ShaderType>
       <TreatWarningAsError>true</TreatWarningAsError>
@@ -223,16 +223,28 @@
       <AdditionalOptions>-enable-16bit-types %(AdditionalOptions)</AdditionalOptions>
     </FxCompile>
   </ItemGroup>
+  <ItemGroup Condition="'$(Platform)'=='x64'">
+    <CopyFileToFolders Include="third_party\DXCompiler\bin\x64\dxcompiler.dll">
+      <FileType>Document</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="third_party\DXCompiler\bin\x64\dxil.dll">
+      <FileType>Document</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Platform)'=='Win32'">
+    <CopyFileToFolders Include="third_party\DXCompiler\bin\x86\dxcompiler.dll">
+      <FileType>Document</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="third_party\DXCompiler\bin\x86\dxil.dll">
+      <FileType>Document</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </CopyFileToFolders>
+  </ItemGroup>
   <ItemGroup>
-    <CopyFileToFolders Include="dlls\dxcompiler.dll">
-      <FileType>Document</FileType>
-      <DeploymentContent>true</DeploymentContent>
-    </CopyFileToFolders>
-    <CopyFileToFolders Include="dlls\dxil.dll">
-      <FileType>Document</FileType>
-      <DeploymentContent>true</DeploymentContent>
-    </CopyFileToFolders>
-    <CopyFileToFolders Include="ray_tracing_shader.hlsl">
+    <CopyFileToFolders Include="shaders\raytracing\ray_tracing_shader.hlsl">
       <FileType>Document</FileType>
       <DeploymentContent>true</DeploymentContent>
     </CopyFileToFolders>
